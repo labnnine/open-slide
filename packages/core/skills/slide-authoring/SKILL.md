@@ -14,6 +14,8 @@ This skill is the **technical reference** for everything that happens inside `sl
 
 When any of those paths reach the point of *writing React code for a page*, this is the source of truth. Do not duplicate the knowledge below into other skills — link here instead.
 
+Use [FRY's presentation preferences](references/fry-preferences.md) for editorial and visual decisions. For a requested Shigeo Fukuda, Fukuda Shigeo or 福田繁雄 treatment, read the [Fukuda-inspired style](references/shigeo-fukuda.md). Preserve the established layout and scope of an existing deck when applying a local edit.
+
 ## Primitive references
 
 Each framework primitive has a full reference file under `references/` in this skill — contract, worked examples, and its own anti-patterns. This file keeps only the always-on rules and a short summary per primitive. **Read the relevant reference file before using a primitive on a page**:
@@ -150,7 +152,7 @@ Swap the heading to 120px or add a 6th bullet and you're over. **Verify every pa
 Pick a coherent look and hold it across every page:
 
 - **Palette** — 1 background, 1 primary text, 1 accent, 1 muted. Put bg/text/accent in the `design` const (see Design system below); extra colors like muted stay as plain consts.
-- **Typography** — one display font + one body font. System stack unless the user specifies. Heavy weight for headlines (800–900), normal for body (400–500).
+- **Typography** — follow the supplied template or theme, or use the font defaults in FRY's presentation preferences. Choose weights that preserve a clear hierarchy.
 - **Layout grid** — pick a single content padding (e.g. 120px) and stick to it. Left-aligned content feels editorial; centered feels ceremonial.
 - **Aesthetic commitment** — choose ONE: minimal, maximalist, editorial, retro, brutalist, soft/pastel, neon, paper/print. Don't mix.
 
@@ -158,7 +160,7 @@ If the `frontend-design` skill is available, consult it for deeper aesthetic gui
 
 ## Webfonts
 
-The default is a system font stack — prefer it. When a deck genuinely needs a webfont (a brand font, or CJK / Thai / Arabic where system coverage is poor), read `references/webfonts.md` first — loading the stylesheet inside a page component registers the whole `@font-face` set once per mounted page, and CJK families need subsetting.
+Prefer installed fonts with a suitable fallback stack. When a deck genuinely needs a webfont (a brand font, or CJK / Thai / Arabic where system coverage is poor), read `references/webfonts.md` first — loading the stylesheet inside a page component registers the whole `@font-face` set once per mounted page, and CJK families need subsetting.
 
 ## Themes
 

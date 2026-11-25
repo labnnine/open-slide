@@ -60,6 +60,8 @@ describe('buildTurnPrompt', () => {
     expect(out).toContain('slides/untitled/index.tsx is a blank deck');
     expect(out).toContain('create-slide skill');
     expect(out).toContain('page by page');
+    expect(out).toContain('first planned page');
+    expect(out).toContain('after applying the create-slide defaults');
     expect(out).not.toContain('page 1 of 1');
     expect(out).toContain('<deck-slug>');
   });
