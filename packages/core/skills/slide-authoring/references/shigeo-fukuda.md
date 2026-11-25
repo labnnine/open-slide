@@ -15,11 +15,13 @@ Use when the user asks for Shigeo Fukuda, Fukuda Shigeo or 福田繁雄, or sele
 - For HTML, a click, keyboard step or transition can reveal the second reading. Support reduced motion and ensure the fully revealed or static state communicates the same message. Make interactive controls distinct from the illustration.
 - After drafting, read each slide at a glance. The takeaway should still make sense to someone who misses the illusion. Check that the design leaves the exact decision wording and evidence legible.
 
-## Example sequence
+## Playable example
+
+Read `apps/demo/slides/fukuda-approval-demo/index.tsx` in the FRY fork, or open [the React source on GitHub](https://github.com/labnnine/open-slide/blob/fry/open-slide-preferences/apps/demo/slides/fukuda-approval-demo/index.tsx). The three pages, artwork, motion and Cantonese notes are defined in that file. Use the example to understand the timing before drawing a new motif for the current subject.
 
 - **Too many handoffs** — Two facing profiles are the obvious figures. The space between them quietly forms a pinched hourglass.
-- **The wait is between teams** — Repeat the contour and make the hourglass the first read. Use an accent at its narrowest point to locate the delay.
-- **Give one team ownership** — Open the space into a clear arrow. Present the real proposed action and supporting evidence in editable text on this page or the following page.
+- **The wait is between teams** — Repeat the contour and use `Steps` and `Step` to reveal a red marker at its narrowest point on the next advance.
+- **Give one team ownership** — Open the space into an arrow. Use the same `MorphElement` ID on both pages and enable `morph` on the incoming page so the marker moves from the bottleneck to the start of the proposed flow. Present the real proposed action and supporting evidence in editable text on this page or the following page.
 
 Use this as a visual exercise. For a live board paper, take headings and decision wording from the source.
 
