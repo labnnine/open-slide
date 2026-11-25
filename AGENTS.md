@@ -4,6 +4,10 @@ You are working on the **open-slide framework** — the runtime, CLI, and toolin
 
 (Slide-authoring guidance lives in the `slide-authoring` / `create-slide` skills under `apps/demo/.claude/skills/`. Use those only when editing files inside `apps/demo/slides/`.)
 
+## Optional presentation skills
+
+When authoring slides, use the upstream workflow by default. If the user expressly selects FRY work preferences, also read [fry-slide-preferences](.agents/skills/fry-slide-preferences/SKILL.md). If the user selects the Fukuda style, also read [shigeo-fukuda-style](.agents/skills/shigeo-fukuda-style/SKILL.md). Apply both when requested together. A request for the original Open Slide workflow uses upstream defaults for any choices the user leaves open.
+
 ## Layout
 
 pnpm + Turbo monorepo.
