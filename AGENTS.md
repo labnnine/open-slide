@@ -2,9 +2,7 @@
 
 You are working on the **open-slide framework** — the runtime, CLI, and tooling that ship to npm.
 
-(Slide-authoring guidance lives in the `slide-authoring` / `create-slide` skills under `apps/demo/.claude/skills/`. Use those only when editing files inside `apps/demo/slides/`.)
-
-For a Shigeo Fukuda, Fukuda Shigeo or 福田繁雄 presentation request, read [the style guide](packages/core/skills/slide-authoring/references/shigeo-fukuda.md) and [the playable React example](apps/demo/slides/fukuda-approval-demo/index.tsx). The example is self-contained and demonstrates how a staged reveal and a shared-element morph communicate the takeaway. Use those techniques to draw an original motif for the requested subject.
+For presentation work that explicitly requests Open Slide, start with the [Open Slide repository skill](.agents/skills/open-slide/SKILL.md). It covers authoring a React deck in `apps/demo/slides/`, revising an existing Open Slide deck and using an external presentation as the source. For framework work, follow the repository rules below.
 
 ## Layout
 
